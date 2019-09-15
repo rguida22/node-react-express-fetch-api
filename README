@@ -1,0 +1,5 @@
+This project allows react frontend to make fetch calls to node server.
+Both react (in client) and node server are started and requests are made.
+Uses concurrent to allow node start command to start bother services.
+Settings can be found in the node package.json file.
+

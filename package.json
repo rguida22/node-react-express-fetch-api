@@ -1,0 +1,22 @@
+{
+  "name": "node_react_boilerplate",
+  "version": "1.0.0",
+  "description": "This project allows react to make fetch calls to node server.\r Both react (in client) and node server are started and requests are made.\r Uses concurrent to allow node start command to start bother services.\r Settings can be found in the node package.json file.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "robert guida",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
